@@ -1,0 +1,35 @@
+.btn-primary,
+.btn-secondary,
+.btn-nav-primary,
+.btn-nav-secondary {
+  padding: 12px 20px 12px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.dropdown-toggle::after {
+  color: $color-accent;
+}
+
+.btn-nav-primary {
+  background-color: $color-primary;
+  color: $color-nav-text;
+}
+
+.btn-nav-secondary {
+  background-color: $color-secondary;
+  color: $color-nav-text;
+}
+
+.gap-10px {
+  grid-gap: 10px !important;
+  gap: 10px !important;
+}

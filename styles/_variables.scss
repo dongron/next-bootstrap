@@ -1,14 +1,19 @@
+$color-primary: #fcdf69;
+$color-secondary: #f99d76;
+$color-accent: #064ea4;
+$color-nav-text: #451B09;
 // Main colors
 $theme-colors: (
-  "primary": #0d6efd,
-  "soft-primary": #f3f7ff,
-  "secondary": #1a1c28,
-  "success": #00c9a7,
-  "info": #09a5be,
-  "warning": #f5ca99,
-  "danger": #ff4136,
-  "light": #fafafa,
-  "dark": #000000,
+  'primary': #fcdf69,
+  'soft-primary': #f3f7ff,
+  'secondary': #f99d76,
+  'accent': #064ea4,
+  'success': #00c9a7,
+  'info': #09a5be,
+  'warning': #f5ca99,
+  'danger': #ff4136,
+  'light': #fafafa,
+  'dark': #000000,
 );
 
 // Enable for lower contrast rattio ligther than primary color default 4.5
