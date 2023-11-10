@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:prod": "env-cmd -f .env.production.local next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -18,7 +19,8 @@
     "sass": "^1.49.9"
   },
   "devDependencies": {
-    "eslint": "^8.10.0",
-    "eslint-config-next": "^11.1.0"
+    "env-cmd": "^10.1.0",
+    "eslint-config-next": "^11.1.0",
+    "prettier": "^3.0.3"
   }
 }
