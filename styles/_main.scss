@@ -13,6 +13,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.25rem;
+  color: $color-nav-link-text;
 }
 
 .dropdown-toggle::after {
@@ -29,7 +30,44 @@
   color: $color-nav-text;
 }
 
+.section-container {
+  height: 645px;
+}
+
 .gap-10px {
   grid-gap: 10px !important;
   gap: 10px !important;
+}
+
+.radius-30px {
+  border-radius: 30px;
+}
+
+.hero-circle-top {
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  left: -143px;
+  top: -122px;
+  background: $color-secondary;
+  border-radius: 290px;
+}
+
+.hero-circle-bottom {
+  position: absolute;
+  right: -50px;
+  bottom: -82px;
+  width: 290px;
+  height: 290px;
+  flex-shrink: 0;
+  border-radius: 290px;
+  background: $color-primary;
+}
+
+.hero-left-section {
+  //margin-top: 160px;
+}
+
+.hero-image {
+  max-height: 100%;
 }
