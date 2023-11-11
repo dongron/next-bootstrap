@@ -3,10 +3,28 @@
 .btn-nav-primary,
 .btn-nav-secondary {
   padding: 12px 20px 12px 20px;
-  border-radius: 30px;
+  border-radius: $inputs-radius;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.25rem;
+}
+
+.form-control {
+  border-radius: $inputs-radius;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+  border-left: 1px solid #cacaca;
+  background: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #aaa;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.form-control__button {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .nav-link {

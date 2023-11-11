@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { Col, Container, Row } from 'react-bootstrap';
+import SearchBar from '../SearchBar';
 
 const Hero = () => {
   return (
@@ -13,9 +14,7 @@ const Hero = () => {
           <Col md={6} className="align-self-center">
             <p className="text-white">Software Recruitment Specialists</p>
             <h1 className="text-white">Elevate your career</h1>
-            <Link href="#!">
-              <a className="btn btn-lg btn-primary px-4">Contact</a>
-            </Link>
+            <SearchBar />
           </Col>
           <Col md={6} className="align-self-center">
             <Image
