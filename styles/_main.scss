@@ -1,3 +1,7 @@
+p {
+  color: $color-gray-text;
+}
+
 .btn-primary,
 .btn-secondary,
 .btn-nav-primary,
@@ -49,7 +53,24 @@
 }
 
 .section-container {
-  height: 645px;
+  min-height: 645px;
+}
+
+.section-container--work-with {
+  min-height: 114px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-container__container--work-with {
+  min-height: 60px;
+}
+.section-container__container__logos--work-with {
+  min-height: 60px;
+}
+
+.section-container--latest-jobs {
+  min-height: 645px;
 }
 
 .gap-10px {
