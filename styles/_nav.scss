@@ -21,7 +21,13 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  transition: background 0.2s linear, box-shadow 0.2s linear;
+  transition:
+    background 0.2s linear,
+    box-shadow 0.2s linear;
+
+  .dropdown-menu {
+    background: rgba(255, 255, 255, 0);
+  }
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {

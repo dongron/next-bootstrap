@@ -33,12 +33,10 @@ const NavBar = () => {
   return (
     <Navbar expand="xl" variant="light" className={navBackground ? 'sticky-nav' : 'bg-white'}>
       <Container>
-        <Link href="/">
-          <a aria-label="Software Recruitment co.">
-            <Navbar.Brand>
-              <Logo />
-            </Navbar.Brand>
-          </a>
+        <Link href="/" aria-label="Software Recruitment co.">
+          <Navbar.Brand>
+            <Logo />
+          </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">

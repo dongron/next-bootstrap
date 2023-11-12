@@ -79,8 +79,8 @@ const Footer = () => {
             <ul className="nav flex-column">
               {exploreLinks.map((link, idx) => (
                 <li className="nav-item mb-20px" key={idx}>
-                  <Link href={link.url}>
-                    <a className="nav-link p-0 fw-normal display-8 text-white">{link.label}</a>
+                  <Link href={link.url} className="nav-link p-0 fw-normal display-8 text-white">
+                    {link.label}
                   </Link>
                 </li>
               ))}
@@ -92,8 +92,8 @@ const Footer = () => {
             <ul className="nav flex-column">
               {sectorsLinks.map((link, idx) => (
                 <li className="nav-item mb-20px" key={idx}>
-                  <Link href={link.url}>
-                    <a className="nav-link p-0 fw-normal display-8 text-white">{link.label}</a>
+                  <Link href={link.url} className="nav-link p-0 fw-normal display-8 text-white">
+                    {link.label}
                   </Link>
                 </li>
               ))}
@@ -105,8 +105,8 @@ const Footer = () => {
             <ul className="nav flex-column">
               {servicesLinks.map((link, idx) => (
                 <li className="nav-item mb-20px" key={idx}>
-                  <Link href={link.url}>
-                    <a className="nav-link p-0 fw-normal display-8 text-white">{link.label}</a>
+                  <Link href={link.url} className="nav-link p-0 fw-normal display-8 text-white">
+                    {link.label}
                   </Link>
                 </li>
               ))}

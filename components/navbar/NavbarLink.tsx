@@ -19,8 +19,8 @@ const NavbarLink: FC<NavbarLinkProps> = ({ label, nestedLinks, url }) => {
       ))}
     </NavDropdown>
   ) : (
-    <Link href={url}>
-      <a className={router.pathname == url ? 'nav-link active' : 'nav-link'}>{label}</a>
+    <Link href={url} className={router.pathname == url ? 'nav-link active' : 'nav-link'}>
+      {label}
     </Link>
   );
 };
