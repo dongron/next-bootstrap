@@ -29,7 +29,7 @@ const WorkWith: FC<LatestJobsTypes> = () => {
                 alt={logo.name}
                 width={250}
                 height={60}
-                objectFit="scale-down"
+                style={{ objectFit: 'scale-down' }}
                 className="mx-auto"
               />
             </Col>

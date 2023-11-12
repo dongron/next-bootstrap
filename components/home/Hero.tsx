@@ -18,8 +18,7 @@ const Hero = () => {
             <Image
               src="/hero-image.jpeg"
               alt="Hero image"
-              objectFit="cover"
-              objectPosition="right"
+              style={{ objectFit: 'cover', objectPosition: 'center right', maxWidth: '100%' }}
               width={507}
               height={480}
               blurDataURL="/img-placeholder.svg"

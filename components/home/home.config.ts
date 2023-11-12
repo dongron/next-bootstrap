@@ -4,7 +4,7 @@ export const jobOffers: JobOfferSummary[] = [
   {
     id: 0,
     language: 'Python',
-    languageIcon: '/python.svg',
+    languageIcon: '/icons/python.svg',
     title: 'Software Engineer 1',
     location: 'London',
     salary: '£65,000',
@@ -16,7 +16,7 @@ export const jobOffers: JobOfferSummary[] = [
   {
     id: 1,
     language: 'Python',
-    languageIcon: '/python.svg',
+    languageIcon: '/icons/python.svg',
     title: 'Software Engineer 2',
     location: 'London',
     salary: '£65,000',
@@ -28,7 +28,7 @@ export const jobOffers: JobOfferSummary[] = [
   {
     id: 2,
     language: 'Python',
-    languageIcon: '/python.svg',
+    languageIcon: '/icons/python.svg',
     title: 'Software Engineer 3',
     location: 'London',
     salary: '£65,000',
@@ -40,7 +40,7 @@ export const jobOffers: JobOfferSummary[] = [
   {
     id: 3,
     language: 'Python',
-    languageIcon: '/python.svg',
+    languageIcon: '/icons/python.svg',
     title: 'Software Engineer 4',
     location: 'London',
     salary: '£65,000',
