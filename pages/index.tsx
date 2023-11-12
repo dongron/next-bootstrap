@@ -19,7 +19,6 @@ export default function Home() {
         <Hero />
         <WorkWith />
         <LatestJobs />
-        <Services />
       </main>
     </Layout>
   );

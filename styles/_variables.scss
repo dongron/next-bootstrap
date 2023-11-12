@@ -1,10 +1,13 @@
 $color-primary: #fcdf69;
 $color-secondary: #f99d76;
 $color-accent: #064ea4;
+$color-accent-bright: #d7e7fb;
+$color-accent-dark: #0e2152;
 $color-nav-text: #451b09;
 $color-nav-link-text: #1a1a1a;
-$color-gray-text: #D2D2D2;
-$inputs-radius: 30px;
+$color-gray-text: #d2d2d2;
+$inputs-radius: 30px; // to rename
+$badge-radius: 30px;
 
 // Main colors
 $theme-colors: (
@@ -12,6 +15,8 @@ $theme-colors: (
   'soft-primary': #f3f7ff,
   'secondary': #f99d76,
   'accent': #064ea4,
+  'accent-bright': #d7e7fb,
+  'accent-dark': #0e2152,
   'success': #00c9a7,
   'info': #09a5be,
   'warning': #f5ca99,

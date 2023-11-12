@@ -2,6 +2,7 @@ p {
   color: $color-gray-text;
 }
 
+.btn-light,
 .btn-primary,
 .btn-secondary,
 .btn-nav-primary,
@@ -11,6 +12,12 @@ p {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.25rem;
+}
+
+.card {
+  border-radius: $inputs-radius;
+  padding: 40px;
+  border: none;
 }
 
 .form-control {
@@ -78,8 +85,36 @@ p {
   gap: 10px !important;
 }
 
+.mb-10px {
+  margin-bottom: 10px;
+}
+
+.mb-20px {
+  margin-bottom: 20px;
+}
+
+.mx-10px {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.my-30px {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .radius-30px {
   border-radius: 30px;
+}
+
+.card--jobs {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 373px;
 }
 
 .hero-circle-top {
@@ -109,4 +144,45 @@ p {
 
 .hero-image {
   max-height: 100%;
+}
+
+.badge {
+  padding: 3px;
+  display: inline-flex;
+}
+
+.badge__label {
+  color: $color-accent;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.card__title {
+  color: $color-accent;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.card__title--light {
+  color: white;
+}
+
+.card__button {
+  padding: 15px 30px;
+}
+
+.text--light {
+  color: white;
+}
+
+.button-control {
+  cursor: pointer;
+}
+
+.button-control-inactive {
+  opacity: 0.5;
 }
