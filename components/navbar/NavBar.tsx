@@ -31,7 +31,7 @@ const NavBar = () => {
   // Active class
   const router = useRouter();
   return (
-    <Navbar expand="lg" variant="light" className={navBackground ? 'sticky-nav' : 'bg-white'}>
+    <Navbar expand="xl" variant="light" className={navBackground ? 'sticky-nav' : 'bg-white'}>
       <Container>
         <Link href="/">
           <a aria-label="Software Recruitment co.">
@@ -48,7 +48,7 @@ const NavBar = () => {
             ))}
           </Nav>
 
-          <div className="d-flex gap-10px">
+          <div className="d-flex gap-10px nav-buttons-container">
           {navButtons.map((navButton, idx) => (
             <NavbarButton key={idx} {...navButton} />
           ))}

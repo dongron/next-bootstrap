@@ -17,19 +17,24 @@ const WorkWith: FC<LatestJobsTypes> = () => {
     <section className="section-container--work-with bg-white space-2 position-relative overflow-hidden">
       <Container className="section-container__container--work-with">
         <p className="w-full text-center">Who we work with</p>
-        <div className="d-flex p-2 justify-content-between section-container__container__logos--work-with">
+        <Row className="d-flex p-2 mx-auto justify-content-between section-container__container__logos--work-with">
           {logoUrls.map((logo, idx) => (
-            <div key={idx} style={{ height: '30px' }}>
+            <Col
+              key={idx}
+              className="mx-auto text-center"
+              style={{ minHeight: '30px', minWidth: '250px' }}
+            >
               <Image
                 src={logo.url}
                 alt={logo.name}
                 width={250}
                 height={60}
                 objectFit="scale-down"
+                className="mx-auto"
               />
-            </div>
+            </Col>
           ))}
-        </div>
+        </Row>
       </Container>
     </section>
   );

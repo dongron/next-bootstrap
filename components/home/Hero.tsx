@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="section-container bg-accent space-2 position-relative overflow-hidden">
       <div className="hero-circle-top" />
       <div className="hero-circle-bottom" />
-      <Container className="">
+      <Container className="position-relative top-0 left-0 right-0">
         <Row className="align-items-center">
           <Col md={6} className="align-self-center">
             <p className="text-white">Software Recruitment Specialists</p>
