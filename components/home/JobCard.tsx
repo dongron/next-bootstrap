@@ -43,7 +43,7 @@ const JobCard: FC<JobCardProps> = ({ details }) => {
         >
           View this job
         </Button>
-        <div className={`fw-light display-8 ${cardVariation}`}>Posted on {details.datePosted}</div>
+        <div className={`fw-light display-10 ${cardVariation}`}>Posted on {details.datePosted}</div>
       </Card.Body>
     </Card>
   );

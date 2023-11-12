@@ -85,12 +85,25 @@ p {
   gap: 10px !important;
 }
 
+.gap-20px {
+  grid-gap: 10px !important;
+  gap: 10px !important;
+}
+
 .mb-10px {
   margin-bottom: 10px;
 }
 
+.mb-30px {
+  margin-bottom: 30px;
+}
+
 .mb-20px {
   margin-bottom: 20px;
+}
+
+.mr-20px {
+  margin-right: 20px;
 }
 
 .mx-10px {

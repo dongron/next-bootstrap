@@ -1,86 +1,118 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Container, Col, Row, Form, Button } from "react-bootstrap";
-import { Facebook, Instagram, Twitter } from "./Icons";
+import Link from 'next/link';
+import Image from 'next/image';
+import { Container, Col, Row, Form, Button } from 'react-bootstrap';
+import { Facebook, Instagram, Twitter } from './Icons';
+// @ts-ignore
+import FbIcon from '../public/facebook.svg';
+// @ts-ignore
+import LIIcon from '../public/linkedin.svg';
+// @ts-ignore
+import TwitterIcon from '../public/twitter.svg';
+// @ts-ignore
+import InstagramIcon from '../public/instagram.svg';
+
+type FooterLinkType = {
+  label: string;
+  url: string;
+};
+
+const exploreLinks: FooterLinkType[] = [
+  { label: 'Homepage', url: '#' },
+  { label: 'For jobseekers', url: '#' },
+  { label: 'For clients', url: '#' },
+  { label: 'Our sectors', url: '#' },
+  { label: 'Resources', url: '#' },
+  { label: 'Contact us', url: '#' },
+];
+
+const sectorsLinks: FooterLinkType[] = [
+  { label: 'Software engineering', url: '#' },
+  { label: 'DevOps', url: '#' },
+  { label: 'Cloud', url: '#' },
+  { label: 'Infrastructure', url: '#' },
+  { label: 'Testing', url: '#' },
+  { label: 'Security', url: '#' },
+];
+const servicesLinks: FooterLinkType[] = [
+  { label: 'Nav item', url: '#' },
+  { label: 'Nav item', url: '#' },
+  { label: 'Nav item', url: '#' },
+  { label: 'Nav item', url: '#' },
+  { label: 'Nav item', url: '#' },
+];
 
 const Footer = () => {
   return (
-    <footer className="space-2">
+    <footer className="space-2 bg-accent text-white">
       <Container>
         <Row>
-          {Array.from({ length: 3 }).map((_, idx) => (
-            <Col md={2} key={idx}>
-              <h2 className="h5">Section</h2>
-              <ul className="nav flex-column">
-                <li className="nav-item mb-2">
-                  <Link href="#!">
-                    <a className="nav-link p-0 text-muted">Home</a>
-                  </Link>
+          <Col md={3}>
+            <h2 className="fw-bold display-9 mb-30px">Software Recruitment co.</h2>
+            <div className="d-flex justify-content-between">
+              <ul className="list-unstyled d-flex gap-20px">
+                <li className="">
+                  <a className="link-dark" href="#" aria-label="LinkedIn">
+                    <LIIcon fill="white" />
+                  </a>
                 </li>
-                <li className="nav-item mb-2">
-                  <Link href="#!">
-                    <a className="nav-link p-0 text-muted">Blog</a>
-                  </Link>
+                <li className="">
+                  <a className="link-dark" href="#" aria-label="Facebook">
+                    <FbIcon fill="white" />
+                  </a>
                 </li>
-                <li className="nav-item mb-2">
-                  <Link href="#!">
-                    <a className="nav-link p-0 text-muted">Pricing</a>
-                  </Link>
+                <li className="">
+                  <a className="link-dark" href="#" aria-label="Instagram">
+                    <InstagramIcon fill="white" />
+                  </a>
                 </li>
-                <li className="nav-item mb-2">
-                  <Link href="#!">
-                    <a className="nav-link p-0 text-muted">FAQ</a>
-                  </Link>
-                </li>
-                <li className="nav-item mb-2">
-                  <Link href="#!">
-                    <a className="nav-link p-0 text-muted">About</a>
-                  </Link>
+                <li className="">
+                  <a className="link-dark" href="#" aria-label="Twitter">
+                    <TwitterIcon fill="white" />
+                  </a>
                 </li>
               </ul>
-            </Col>
-          ))}
-          <Col md={4} className="ms-auto">
-            <Form>
-              <h2 className="h5">Subscribe to our newsletter</h2>
-              <p>Monthly digest of whats new and exciting from us.</p>
-              <div className="d-flex w-100 gap-2">
-                <Form.Label htmlFor="newsletter1" className="visually-hidden">
-                  Email address
-                </Form.Label>
-                <Form.Control
-                  id="newsletter1"
-                  type="text"
-                  className="form-control"
-                  placeholder="Email address"
-                />
-                <Button className="btn btn-primary" type="button">
-                  Subscribe
-                </Button>
-              </div>
-            </Form>
+            </div>
+          </Col>
+
+          <Col md={3}>
+            <h2 className="fw-bold display-6 mb-30px">Explore</h2>
+            <ul className="nav flex-column">
+              {exploreLinks.map((link, idx) => (
+                <li className="nav-item mb-20px" key={idx}>
+                  <Link href={link.url}>
+                    <a className="nav-link p-0 fw-normal display-8 text-white">{link.label}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Col>
+
+          <Col md={3}>
+            <h2 className="fw-bold display-6 mb-30px">Sectors</h2>
+            <ul className="nav flex-column">
+              {sectorsLinks.map((link, idx) => (
+                <li className="nav-item mb-20px" key={idx}>
+                  <Link href={link.url}>
+                    <a className="nav-link p-0 fw-normal display-8 text-white">{link.label}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Col>
+
+          <Col md={3}>
+            <h2 className="fw-bold display-6 mb-30px">Services</h2>
+            <ul className="nav flex-column">
+              {servicesLinks.map((link, idx) => (
+                <li className="nav-item mb-20px" key={idx}>
+                  <Link href={link.url}>
+                    <a className="nav-link p-0 fw-normal display-8 text-white">{link.label}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </Col>
         </Row>
-        <div className="d-flex justify-content-between py-4 my-4 border-top">
-          <p>© 2021 Company, Inc. All rights reserved.</p>
-          <ul className="list-unstyled d-flex">
-            <li className="ms-3">
-              <a className="link-dark" href="#" aria-label="Twitter">
-                <Twitter />
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="link-dark" href="#" aria-label="Instagram">
-                <Instagram />
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="link-dark" href="#" aria-label="Facebook">
-                <Facebook />
-              </a>
-            </li>
-          </ul>
-        </div>
       </Container>
     </footer>
   );
