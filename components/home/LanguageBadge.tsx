@@ -11,7 +11,7 @@ type LanguageBadgeProps = {
 const LanguageBadge: FC<LanguageBadgeProps> = ({ language, icon, className }) => {
   return (
     <Badge bg="light" text="dark" className={className}>
-      <Image src={icon} width={18} height={18} />
+      <Image src={icon} width={18} height={18} alt={language} />
       <span className="badge__label">{language}</span>
     </Badge>
   );
