@@ -5,9 +5,9 @@ import { jobOffers } from './home.config';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'usehooks-ts';
 // @ts-ignore
-import ArrowLeftIcon from '../../public/arrow-circle-left.svg';
+import ArrowLeftIcon from '../../public/icons/arrow-circle-left.svg';
 // @ts-ignore
-import ArrowRightIcon from '../../public/arrow-circle-right.svg';
+import ArrowRightIcon from '../../public/icons/arrow-circle-right.svg';
 
 type LatestJobsTypes = {};
 

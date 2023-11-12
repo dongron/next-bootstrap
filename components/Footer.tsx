@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { Container, Col, Row, Form, Button } from 'react-bootstrap';
 import { Facebook, Instagram, Twitter } from './Icons';
 // @ts-ignore
-import FbIcon from '../public/facebook.svg';
+import FbIcon from '../public/icons/facebook.svg';
 // @ts-ignore
-import LIIcon from '../public/linkedin.svg';
+import LIIcon from '../public/icons/linkedin.svg';
 // @ts-ignore
-import TwitterIcon from '../public/twitter.svg';
+import TwitterIcon from '../public/icons/twitter.svg';
 // @ts-ignore
-import InstagramIcon from '../public/instagram.svg';
+import InstagramIcon from '../public/icons/instagram.svg';
 
 type FooterLinkType = {
   label: string;

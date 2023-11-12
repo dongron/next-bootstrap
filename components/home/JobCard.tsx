@@ -5,9 +5,9 @@ import LanguageBadge from './LanguageBadge';
 import Image from 'next/image';
 import Button from 'react-bootstrap/Button';
 // @ts-ignore
-import MapPinIcon from '../../public/map-pin.svg';
+import MapPinIcon from '../../public/icons/map-pin.svg';
 // @ts-ignore
-import CashIcon from '../../public/cash.svg';
+import CashIcon from '../../public/icons/cash.svg';
 
 type JobCardProps = { details: JobOfferSummary };
 
