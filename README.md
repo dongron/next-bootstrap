@@ -1,19 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project with [`react-bootstrap`](https://react-bootstrap.github.io/).
+# React, Bootstrap, Next.js example
 
-## Getting Started
+Application build on top of React, Bootstrap, TypeScript, Next.js, SASS. It's mostly an UI example with hardcoded data.
 
-First, run the development server:
+This app includes a primitive slider, inputs UI and multilevel menu.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Links
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Live version of this app is available here
+[next-bootstrap-sample.netlify.app](https://next-bootstrap-sample.netlify.app/).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Source code can be find here [github.com/dongron/next-bootstrap](https://github.com/dongron/next-bootstrap).
 
-## Screenshot
+## What should be done next
 
-![Screenshot](/public/screenshot.jpg)
+There are w few missing parts. For example, modals, search input functionality.
+
+There could be added more animations and slider could be smoother, maybe implemented third party slider.
+
+Other thing is migration to `/app` type of router.
+
+Data for job cards could be moved to the mocked requests and it's logic could be made more generic.
+
+Some TypeScript variables could be changed to enums.
